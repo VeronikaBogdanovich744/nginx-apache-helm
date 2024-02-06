@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.apache.deployment_name }} 
+  labels:
+    app : apache
+spec:
+  selector:
+    matchLabels:
+      app: apache
+  template:
+    metadata:
+      labels:
+        app: apache
+    spec:
+      containers:
+        - name: nginx
+          image: {{ .Values.apache.image }} 
+          ports:
+            - containerPort: 80

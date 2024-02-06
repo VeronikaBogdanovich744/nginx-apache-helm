@@ -1,0 +1,18 @@
+#nginx_deployment_name: nginx-deployment
+#nginx_image: veronikabogdanovich/nginx-2:1
+#apache_image: veronikabogdanovich/apache:1.0
+#replicas: 1
+
+nginx:
+  deployment_name: nginx-deployment
+  image: veronikabogdanovich/nginx-2:1
+  replicas: 1
+  service:
+    name: nginx-service
+
+apache:
+  deployment_name: apache-deployment  
+  image: veronikabogdanovich/apache:1.0
+  replicas: 1
+  service:
+    name: apache-service
