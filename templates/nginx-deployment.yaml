@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: {{ .Values.nginx.image }} #veronikabogdanovich/nginx-2:1
+          image: {{ .Values.nginx.image }} 
           ports:
             - containerPort: 80
