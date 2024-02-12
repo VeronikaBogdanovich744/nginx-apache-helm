@@ -14,7 +14,7 @@ data:
     </head>
     <body>
         <h1>This is my main page</h1>
-        <h2>File from configmap</h2>
+        <h2>File from configmap 2</h2>
         <p><a href="/redblue/">Redblue page</a></p>
         <p><a href="/secondpage/">Second page</a></p>
         <p><a href="/music/">Download music</a></p>
