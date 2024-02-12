@@ -22,6 +22,24 @@ spec:
             - name: nginx-html-volume
               mountPath: /var/www/veronika.freedynamicdns.net/html/index.html
               subPath: index.html
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 5  
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 5   
+          startupProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 5     
       volumes:
         - name: nginx-html-volume
           configMap:
