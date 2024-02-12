@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Main Page</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <h1>This is my main page</h1>
+        <h2>File from configmap</h2>
+        <p><a href="/redblue/">Redblue page</a></p>
+        <p><a href="/secondpage/">Second page</a></p>
+        <p><a href="/music/">Download music</a></p>
+        <p><a href="/img.jpg">Jpg page</a></p>
+        <p><a href="/img.png">Png page</a></p>
+        <p><a href="/index.php">Apache server</p>
+    </body>
+    </html>
