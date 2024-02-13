@@ -2,11 +2,19 @@ apiVersion: v1
 entries:
   Nginx-Apache-App:
   - apiVersion: v2
-    created: "2024-02-13T10:07:54.143147514Z"
-    digest: 94b3b9234f81721498ede50eaa98ecc042dcf7d596e92def2cd2208ab8376cd7
+    created: "2024-02-13T12:11:13.967116702Z"
+    digest: 073093df4003bce2abdfa16104c6baa9f8800a7ba506a77a776e5eb701d2a40f
     name: Nginx-Apache-App
     type: application
     urls:
     - https://github.com/VeronikaBogdanovich744/nginx-apache-helm.git/Nginx-Apache-App-3.13.3.tgz
     version: 3.13.3
-generated: "2024-02-13T10:07:54.141359196Z"
+  - apiVersion: v2
+    created: "2024-02-13T12:11:13.968543344Z"
+    digest: 94b3b9234f81721498ede50eaa98ecc042dcf7d596e92def2cd2208ab8376cd7
+    name: Nginx-Apache-App
+    type: application
+    urls:
+    - https://github.com/VeronikaBogdanovich744/nginx-apache-helm.git/nginx-apache-helm/Nginx-Apache-App-3.13.3.tgz
+    version: 3.13.3
+generated: "2024-02-13T12:11:13.962404749Z"
