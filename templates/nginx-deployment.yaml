@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ .Values.nginx.deployment_name }} #nginx-deployment
     annotations:
-      reloader.stakater.com/auto: "true"
+      configmap.reloader.stakater.com/reload: "console-config"
   labels:
     app : nginx
 spec:
