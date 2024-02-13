@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.nginx.deployment_name }} #nginx-deployment
-    annotations:
-      configmap.reloader.stakater.com/reload: "console-config"
   labels:
     app : nginx
 spec:
@@ -22,8 +20,7 @@ spec:
             - containerPort: 80
           volumeMounts:
             - name: nginx-html-volume
-              mountPath: /var/www/veronika.freedynamicdns.net/html/index.html
-              subPath: index.html
+              mountPath: /var/www/veronika.freedynamicdns.net/html/
           livenessProbe:
             httpGet:
               path: /
